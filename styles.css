@@ -24,6 +24,21 @@ body{
     vertical-align: middle;
 }
 
+.numpad {
+    position: relative;
+    top: 20px;
+    padding: 0.5px;
+    width: 70%;
+}
+
+.key {
+    background-color: grey;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0.1rem;
+}
+
 .fixed{
   position: fixed;
   bottom: 0;
