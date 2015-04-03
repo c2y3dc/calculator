@@ -1,5 +1,7 @@
 body{
     font-family: sans-serif;
+    color: white;
+    box-sizing: border-box;
 }
 
 .calc {
@@ -14,9 +16,32 @@ body{
 }
 
 .screen {
+    color: black;
     width: 100%;
     height: 80px;
     text-align: right;
     background-color: lightgreen;
     vertical-align: middle;
+}
+
+.fixed{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-color: white;
+  background-color: rebeccapurple;
+}
+
+.h {
+  height: 10000px;
+}
+
+.abs {
+  position: absolute;
+  top: -22px;
+  width: 100%;
+  background-color: indianred;
+  box-shadow: 2px 2px 2px black;
 }
