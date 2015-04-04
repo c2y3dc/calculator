@@ -1,7 +1,9 @@
 body{
-    font-family: sans-serif;
+    font-family: monospace;
     color: white;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .calc {
@@ -9,35 +11,87 @@ body{
     max-width: 320px;
     margin: 0 auto;
     background-color: dimgrey;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 5px 5px 5px slategrey; 
     border-radius: 1.5%;
     overflow: hidden;
 }
 
 .screen {
+    position: relative;
     color: black;
     width: 100%;
     height: 80px;
-    text-align: right;
+    /*text-align: right;*/
     background-color: lightgreen;
     vertical-align: middle;
 }
 
+.digit {
+    font-size: 4rem; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .numpad {
     position: relative;
-    top: 20px;
+    top: 40px;
     padding: 0.5px;
-    width: 70%;
+    width: 65%;
+    margin: 0 0 0 20px;
+    border-style: dotted;
 }
 
 .key {
     background-color: grey;
-    display: inline-block;
+/*    display: inline-block;*/
+    float: left;
     width: 60px;
     height: 60px;
     margin: 0.1rem;
 }
+
+.clear {
+    clear: left;
+}
+
+.container {
+    background-color: lightgreen;
+    display: -webkit-flex;
+}
+
+nav {
+    background-color: midnightblue;
+    width: 20%
+}
+
+.column {
+    background-color: rebeccapurple;
+    flex: 1;
+}
+
+/*nav {
+    background-color: midnightblue;
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+
+.column {
+    background-color: rebeccapurple;
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}*/
+
+.verse {
+    /*padding: 1rem;*/
+    -webkit-column-count: 4;
+    -webkit-column-gap: 1rem;
+}
+
 
 .fixed{
   position: fixed;
