@@ -14,7 +14,7 @@ body{
     padding: 30px;
     box-shadow: 5px 5px 5px slategrey; 
     border-radius: 1.5%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .screen {
@@ -39,7 +39,6 @@ body{
     top: 40px;
     padding: 0.5px;
     width: 65%;
-    margin: 0 0 0 20px;
     border-style: dotted;
 }
 
@@ -112,28 +111,6 @@ nav {
     -webkit-column-gap: 0.5rem;
 }
 
-.fixed{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  text-align: center;
-  font-color: white;
-  background-color: rebeccapurple;
-}
-
-.h {
-  height: 10000px;
-}
-
-.abs {
-  position: absolute;
-  top: -22px;
-  width: 100%;
-  background-color: indianred;
-  box-shadow: 2px 2px 2px black;
-}
-
 .flexcontainer {
     border-style: dashed;
     background-color: lightgreen;
@@ -141,7 +118,7 @@ nav {
     color: dodgerblue;
 }
 
-.image {
+.flexcontainer .image {
     flex: 1;
 /*    min-width: 100px;
 */}
@@ -149,6 +126,29 @@ nav {
 .flexcontainer section {
     flex: 5;
     background-color: orange;
+}
+
+.flexcontainer .link {
+    flex: 1;
+}
+
+.floatcontainer {
+    border-style: dashed;
+    background-color: rebeccapurple;`
+    color: gold;
+    height: 50px;
+}
+
+.floatcontainer .image {
+    background-color: dodgerblue;
+    float: left;
+    height: 100%;
+}
+
+.floatcontainer .link {
+    float: right;
+    background-color: aquamarine;
+    height: 100%;
 }
 
 /*center div with unknown width & height*/
@@ -174,7 +174,6 @@ nav {
     width: 300px;
 }
 
-
 /*center div with flexbox*/
 .vertical-container {
     background-color: rebeccapurple;
@@ -184,6 +183,25 @@ nav {
     justify-content: center;
 }
 
-.link {
-    flex: 1;
+
+.fixed{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-color: white;
+  background-color: gold;
+}
+
+.h {
+  height: 10000px;
+}
+
+.abs {
+  position: absolute;
+  top: -22px;
+  width: 100%;
+  background-color: indianred;
+  box-shadow: 2px 2px 2px black;
 }
