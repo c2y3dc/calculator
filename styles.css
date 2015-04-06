@@ -56,12 +56,6 @@ body{
     clear: left;
 }
 
-.container {
-    background-color: lightgreen;
-    display: -webkit-flex;
-    color: grey;
-}
-
 nav {
     background-color: midnightblue;
     width: 20%
@@ -97,7 +91,6 @@ nav {
     flex: initial;
     min-width: 100px;
     width: 200px;
-    height: 100px;
     border-style: solid;
 }
 
@@ -115,6 +108,8 @@ nav {
 .flex2 {
     flex: 2;
     border-style: dashed;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 0.5rem;
 }
 
 .fixed{
@@ -137,4 +132,58 @@ nav {
   width: 100%;
   background-color: indianred;
   box-shadow: 2px 2px 2px black;
+}
+
+.flexcontainer {
+    border-style: dashed;
+    background-color: lightgreen;
+    display: -webkit-flex;
+    color: dodgerblue;
+}
+
+.image {
+    flex: 1;
+/*    min-width: 100px;
+*/}
+
+.flexcontainer section {
+    flex: 5;
+    background-color: orange;
+}
+
+/*center div with unknown width & height*/
+.container {
+    text-align: center;
+    height: 300px;
+    background-color: rgba(192,192,192,0.8);
+}
+
+.container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+.center {
+    color: black;
+    background-color: dodgerblue;
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+}
+
+
+/*center div with flexbox*/
+.vertical-container {
+    background-color: rebeccapurple;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    flex: 1;
 }
