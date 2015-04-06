@@ -38,8 +38,9 @@ body{
     position: relative;
     top: 40px;
     padding: 0.5px;
-    width: 65%;
+    width: 60%;
     border-style: dotted;
+    overflow: auto;
 }
 
 .key {
@@ -51,9 +52,9 @@ body{
     margin: 0.1rem;
 }
 
-.clear {
+/*.clear {
     clear: left;
-}
+}*/
 
 nav {
     background-color: midnightblue;
@@ -118,7 +119,7 @@ nav {
     color: dodgerblue;
 }
 
-.flexcontainer .image {
+.flexcontainer > .image {
     flex: 1;
 /*    min-width: 100px;
 */}
@@ -128,15 +129,16 @@ nav {
     background-color: orange;
 }
 
-.flexcontainer .link {
+.flexcontainer > .link {
     flex: 1;
 }
 
 .floatcontainer {
     border-style: dashed;
-    background-color: rebeccapurple;`
+    background-color: rebeccapurple;
     color: gold;
     height: 50px;
+    overflow: auto;
 }
 
 .floatcontainer .image {
@@ -183,6 +185,26 @@ nav {
     justify-content: center;
 }
 
+/*example where float spans two div with content*/
+.floatilla {
+    text-align: right;
+    color: navy;
+    background-color: aquamarine;
+    overflow: auto;
+}
+
+.floatilla section {
+    border-width: thin;
+    border-style: solid;
+}
+
+.floaty {
+    color: magenta;
+    background-color: gold;
+    float: right;
+    width: 80px;
+    height: 100%;
+}
 
 .fixed{
   position: fixed;
