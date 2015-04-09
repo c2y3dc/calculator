@@ -207,7 +207,7 @@ nav {
     background-color: slategrey;
     display: table;
     height: 400px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .innercontainer {
